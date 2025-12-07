@@ -1,4 +1,4 @@
-import UserDashboard from './UserDashboard';
+import UserDashboard from './AdminDashboard';
 
 function App() {
   return <UserDashboard />;
