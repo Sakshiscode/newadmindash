@@ -1,7 +1,7 @@
 import UserDashboard from './AdminDashboard';
 
 function App() {
-  return <AdminDashboard />;
+  return <UserDashboard />;
 }
 
 export default App;
