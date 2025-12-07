@@ -6,7 +6,7 @@ export default function AdminDashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/feedback"); // ✅ explicit backend URL
+        const res = await fetch("https://your-backend.vercel.app/api/feedbacks"); // ✅ explicit backend URL
         const data = await res.json();
         setFeedbacks(data);
       } catch (error) {
@@ -61,4 +61,5 @@ export default function AdminDashboard() {
     </div>
   );
 }
+
 
