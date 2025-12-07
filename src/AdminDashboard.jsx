@@ -6,7 +6,7 @@ export default function AdminDashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/feedbacks"); // ✅ explicit backend URL
+        const res = await fetch("https://backend-indol-one-34.vercel.app/"); // ✅ explicit backend URL
         const data = await res.json();
         setFeedbacks(data);
       } catch (error) {
@@ -61,3 +61,4 @@ export default function AdminDashboard() {
     </div>
   );
 }
+
